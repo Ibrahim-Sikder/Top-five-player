@@ -21,4 +21,32 @@ function selectedTopPlayer(element){
 
 
 
+//  Get input value 
+ function getInputValuById(element){
+    const perPlayerPrice = document.getElementById(element);
+    const perPlayerPriceString = perPlayerPrice.value ;
+    const perPlayerPriceNumber = parseFloat(perPlayerPriceString);
+    perPlayerPrice.value = "";
+    return perPlayerPriceNumber ;
+    
+ }
 
+ // get text value
+ function getTextValueById(textValueById){
+    const textElement = document.getElementById(textValueById);
+    const textElementString = textElement.innerText ;
+    const textElementNumber = parseFloat(textElementString);
+    return textElementNumber ;
+ }
+
+
+// Calculate perPlayer expense 
+
+ document.getElementById('calculateBtn').addEventListener('click', function(){
+    const totalPlayerExpense  = document.getElementById('playerExpense');
+    const perPlayerPrice = getInputValuById('perPlayerPrice')
+    const playerExpense = perPlayerPrice * 5 ;
+    totalPlayerExpense.innerText = playerExpense ;
+    
+
+ })
