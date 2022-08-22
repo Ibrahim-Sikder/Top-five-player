@@ -60,6 +60,160 @@
     </section>
     </header>
  <!--Main sectin start -->
+ <main class="mt-5">
+    <section id="mainSection text-center">
+       <div class="container">
+      <div class="row">
+        <div class="col-md-9 text-center">
+          <div class="row">
+            <div class="col-md-4">
+                <div class="card singleCard mx-1 mb-3 s" style="width:18rem;">
+                    <img  src="images/messiH.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 id="TopPlayer" class="card-title"> Messi </h5>
+                      <p class="card-text">750 goal : 650 match </p>
+                      <a id="selectTopPlayer" onclick="selectedTopPlayer(this)" href="#" class="btn btn-primary px-5">Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card singleCard mx-2 mb-3" style="width:18rem;">
+                    <img  src="images/shakib.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Shakib Al Hasan </h5>
+                      <p class="card-text">999 run : 5000 wickets </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)">Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card singleCard mx-2 mb-3" style="width:18rem;">
+                    <img  src="images/mass.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Mashrafe Bin Mortaza</h5>
+                      <p class="card-text">950 wicket : 899 match </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)" >Select top player </a>
+                    </div>
+                  </div>
+            </div>
+          
+            <div class="col-md-4">
+                <div class="card singleCard mx-1 mb-3" style="width:18rem;">
+                    <img  src="images/neymar.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Neymar Jr </h5>
+                      <p class="card-text">550 goal :450 match </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)" >Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card singleCard mx-1 mb-3" style="width:18rem;">
+                    <img  src="images/afridi1.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Shahid Afridi  </h5>
+                      <p class="card-text">10000 run : 340 match </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)" >Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card singleCard mx-1 mb-3" style="width:18rem;">
+                    <img  src="images/rolando1.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Cristiano Rolando </h5>
+                      <p class="card-text">700 goal : 600 match  </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)">Select top player </a>
+                    </div>
+                  </div>
+            </div>
+          
+            <div class="col-md-4">
+                <div class="card singleCard mb-3" style="width:18rem;">
+                    <img  src="images/gayel1.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Crish Gayel </h5>
+                      <p class="card-text">2999 run : 500 match </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)">Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card singleCard mx-2" style="width:18rem;">
+                    <img  src="images/develers.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Abe Divilars</h5>
+                      <p class="card-text">899 run : 400 match </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)">Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card singleCard mx-2" style="width:18rem;">
+                    <img  src="images/sala.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> Mohammed Chala </h5>
+                      <p class="card-text"> 499 goal : 300 match  </p>
+                      <a href="#" class="btn btn-primary px-5" onclick="selectedTopPlayer(this)">Select top player </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="singleCard mb-3 bg-dark text-white p-5 ">
+                  <h2 class="text-center">Selected player </h2>
+                  <ul id="ul"></ul>
+                  
+              </div>
+          </div>
+            <div class="col-md-12">
+                <div class="singleCard bg-dark text-white p-5 ">
+                    <h2 class="text-center">Budget  </h2>
+                   <div class="perPlayer">
+                    <small>Per Player </small>
+                    <input type="text" id="perPlayerPrice">
+                   </div>
+                    <button id="calculateBtn" class="bg-primary mb-2 px-5 w-100 text-white" >Calculate</button>
+                    
+                       <div class="playerExpense">
+                        <small>Player Expenses </small>
+                        <small class="expense">$ <span id="playerExpense">00</span> </small>
+                       </div>
+                      <div class="manager">
+                        <small>Manager</small>
+                        <input type="text" id="managerCoast" >
+                      </div>
+                       <div class="coach">
+                        <small>Coach </small>
+                        <input type="text" id="coachCoast"/>
+                       </div>
+                        <button id="calculateTotal" class="bg-primary px-4 text-white  py-1">Calculate total </button>
+                        <div class="total">
+                            <strong id="total">
+                                Total
+                            </strong>
+                            <span id="totalExpense">
+                                $ <span id="totalCoast">00</span>
+                            </span>
+                        </div>
+                   
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+            
+    </section>
+ </main>
+
 
 
 
