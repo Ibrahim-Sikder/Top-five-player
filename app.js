@@ -1,4 +1,5 @@
 
+
 function selectedTopPlayer(element){
     const elementName = element.parentNode.children[0].innerText;
     const li = document.createElement('li');
@@ -22,24 +23,29 @@ function selectedTopPlayer(element){
 
 
 
+
 //  Get input value 
- function getInputValuById(element){
-    const perPlayerPrice = document.getElementById(element);
-    const perPlayerPriceString = perPlayerPrice.value ;
-    const perPlayerPriceNumber = parseFloat(perPlayerPriceString);
-    perPlayerPrice.value = "";
-    return perPlayerPriceNumber ;
-    
- }
+
+   function getInputValuById(element){
+      const perPlayerPrice = document.getElementById(element);
+      const perPlayerPriceString = perPlayerPrice.value ;
+      const perPlayerPriceNumber = parseFloat(perPlayerPriceString);
+      perPlayerPrice.value = "";
+      return perPlayerPriceNumber ;
+      
+   }
+
 
  // get text value
- function getTextValueById(textValueById){
-    const textElement = document.getElementById(textValueById);
-    const textElementString = textElement.innerText ;
-    const textElementNumber = parseFloat(textElementString);
-    return textElementNumber ;
- }
 
+   
+   function getTextValueById(textValueById){
+      const textElement = document.getElementById(textValueById);
+      const textElementString = textElement.innerText ;
+      const textElementNumber = parseFloat(textElementString);
+      return textElementNumber ;
+   }
+  
 
 // Calculate perPlayer expense 
 
@@ -63,3 +69,4 @@ function selectedTopPlayer(element){
     totalCoast.innerText = totalGameCoast ;
 
  })
+ console.log(typeof(isNaN))

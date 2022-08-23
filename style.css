@@ -1,6 +1,4 @@
 *{
-  
-
     overflow-x: hidden;
     
 
@@ -8,6 +6,7 @@
 body{
     background:#151515;
     overflow: hidden;
+    
 }
 .heading{
     font-family: 'Lobster', cursive;
@@ -39,7 +38,7 @@ Main section styling
     background:black;
     color:white ;
     display:inline;
-    width:90px;
+    width:70px;
     padding:0 5px;
     border:1px solid white;
     margin-left:5px;
@@ -60,7 +59,7 @@ Main section styling
     
 }
 #calculateTotal{
-   width: 100%;
+  width:200px;
    margin-top:10px;
    margin-bottom:10px;
 }
@@ -70,13 +69,22 @@ Main section styling
     justify-content: space-between;
     margin-top:10px;
 }
-
+.singleCard{
+    text-align:center !important;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
 .singleCard img{
-    height:40vh;
+   height:40vh;
     object-fit:cover;
     width:100%;
-    background:black;
+    background:black;   
+    text-align:center !important;
 }
+
 
 .header-section{
     overflow-y: hidden;
@@ -90,4 +98,28 @@ Main section styling
 }
 #ul li{
     list-style-type:number;
+}
+/*
+==================
+Footer styling
+==================
+*/
+#footerSection{
+    color:white ;
+    background:black;
+    text-align:center;
+    padding: 50px 0;
+
+}
+#footerSection h5{
+    font-size:20px;
+}
+
+
+@media only screen and (max-width:767px){
+    .singleCard img{
+        height:70vh;
+        
+     }
+
 }
