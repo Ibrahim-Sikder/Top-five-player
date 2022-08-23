@@ -8,8 +8,8 @@ function selectedTopPlayer(element){
     const ulLength = ul.children.length;
     if(ulLength < 5 ){
         ul.appendChild(li);
-        element.li.listStyleType='number';
-        element.setAttribute('disabled', '');
+        element.li.style.listStyleType='number';
+        element.setAttribute('disabled', 'true');
         element.style.backgroundColor = '#ddd';
         
         return ;
