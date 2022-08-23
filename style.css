@@ -58,6 +58,9 @@ Main section styling
     margin-bottom:10px;
     
 }
+#calculateBtn{
+    width:200px;
+}
 #calculateTotal{
   width:200px;
    margin-top:10px;
@@ -113,6 +116,10 @@ Footer styling
 }
 #footerSection h5{
     font-size:20px;
+}
+
+.selectedToCard{
+    width:100%; height:40vh; background:#202529; margin-bottom:5px
 }
 
 
