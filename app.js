@@ -6,7 +6,8 @@ function selectedTopPlayer(element){
     const ul = document.getElementById('ul');
     const ulLength = ul.children.length;
     if(ulLength < 5 ){
-        ul.appendChild(li)
+        ul.appendChild(li);
+        element.li.listStyleType='number';
         element.setAttribute('disabled', '');
         element.style.backgroundColor = '#73452';
         
@@ -48,5 +49,17 @@ function selectedTopPlayer(element){
     const playerExpense = perPlayerPrice * 5 ;
     totalPlayerExpense.innerText = playerExpense ;
     
+
+ })
+
+ // Calculate  total game expense 
+
+ document.getElementById('calculateTotal').addEventListener('click', function(){
+    const totalCoast = document.getElementById('totalCoast');
+    const manager = getInputValuById('managerCoast');
+    const coach = getInputValuById('coachCoast');
+    const totalPlayerExpense = getTextValueById('playerExpense');
+    const totalGameCoast = manager + coach + totalPlayerExpense ;
+    totalCoast.innerText = totalGameCoast ;
 
  })
