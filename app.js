@@ -10,7 +10,7 @@ function selectedTopPlayer(element){
         ul.appendChild(li);
         element.li.listStyleType='number';
         element.setAttribute('disabled', '');
-        element.style.backgroundColor = '#73452';
+        element.style.backgroundColor = '#ddd';
         
         return ;
     }else{
